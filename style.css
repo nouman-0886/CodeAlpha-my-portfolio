@@ -323,8 +323,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 940;
   opacity: 0;
   transition: opacity var(--t-med);
+  visibility: hidden;
+  pointer-events: none;
 }
-.mobile-overlay.open { opacity: 1; }
+.mobile-overlay.open { opacity: 1;
+                     visibility: visible;
+                     pointer-events: auto;
+                     }
 
 .mobile-links { display: flex; flex-direction: column; gap: 0.5rem; }
 .mobile-link {
