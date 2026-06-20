@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nouman — Front-End Developer & Creative Designer</title>
+  <meta name="description" content="Nouman's personal portfolio — Front-End Developer & Creative Designer building modern web experiences." />
+
+  <!-- Google Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="grey-snake-shaped-letter-n-vector-illustration_95164-1693.avif">
+
+  <!-- Icons via CDN (Font Awesome free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <header class="nav-header" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Nouman<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul class="mobile-links">
+      <li><a href="#home"     class="mobile-link">Home</a></li>
+      <li><a href="#about"    class="mobile-link">About</a></li>
+      <li><a href="#skills"   class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#contact"  class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Animated background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Muhammad Nouman</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-static">I'm a&nbsp;</span>
+        <span class="hero-typewriter" id="typewriter"></span>
+        <span class="typewriter-cursor" aria-hidden="true">|</span>
+      </div>
+      <p class="hero-desc">
+        I craft <strong>pixel-perfect interfaces</strong> and <strong>engaging digital experiences</strong> — turning ideas into fast, accessible, and beautifully designed websites.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <!-- Social row -->
+      <div class="hero-socials">
+        <a href="https://github.com/nouman-0886" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nouman-webdev/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <!-- Hero illustration / avatar placeholder -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <i class="fa-solid fa-code"></i>
+        </div>
+      </div>
+      <!-- Floating badges -->
+      <div class="float-badge badge-html">HTML5</div>
+      <div class="float-badge badge-css">CSS3</div>
+      <div class="float-badge badge-js">JS</div>
+      <div class="float-badge badge-react">React</div>
+      <div class="float-badge badge-tailwind">Tailwind CSS</div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">Who I Am &amp; What Drives Me</h2>
+
+      <div class="about-grid">
+        <!-- Left: bio -->
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Nouman</strong>, a passionate <strong>Front-End Developer &amp; Creative Designer</strong> based in Pakistan. I love transforming ideas into visually stunning, high-performance web experiences that users genuinely enjoy.
+          </p>
+          <p>
+            My journey started with curiosity about how websites work — and quickly grew into a full-blown passion for writing clean code and designing beautiful interfaces. Every project is an opportunity to blend logic with creativity.
+          </p>
+          <p>
+            I'm a firm believer in <em>continuous learning</em>. The web evolves fast, and so do I — whether it's mastering a new CSS technique, exploring a JavaScript framework, or picking up design trends to keep my work fresh and modern.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Dedication</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;">
+            <i class="fa-solid fa-handshake"></i> Let's Work Together
+          </a>
+          <a href="Muhammad_Nouman_Resume.pdf" class="btn btn-primary" target="_blank" style="margin-top:1.5rem;">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+
+        </div>
+
+        <!-- Right: fun details -->
+        <div class="about-details reveal">
+          <div class="detail-card glass">
+            <i class="fa-solid fa-laptop-code detail-icon"></i>
+            <h3>Development</h3>
+            <p>Building responsive, accessible, and fast-loading websites with clean, maintainable code.</p>
+          </div>
+          <div class="detail-card glass">
+            <i class="fa-solid fa-palette detail-icon"></i>
+            <h3>Design</h3>
+            <p>Creating visually compelling layouts and graphics with a strong eye for typography and color.</p>
+          </div>
+          <div class="detail-card glass">
+            <i class="fa-solid fa-seedling detail-icon"></i>
+            <h3>Growth Mindset</h3>
+            <p>Always learning — exploring new tools, techniques, and best practices to level up constantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">My Stack</div>
+      <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+      <p class="section-subtitle reveal">Tools I use to bring ideas to life.</p>
+
+      <div class="skills-grid">
+
+        <!-- HTML5 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap html-color">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="92">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <p class="skill-tag">Semantic Markup</p>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap css-color">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3 class="skill-name">CSS3</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <p class="skill-tag">Flexbox · Grid · Animations</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap js-color">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <p class="skill-tag">ES6+ · DOM · APIs</p>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap bs-color">
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+          <h3 class="skill-name">Bootstrap</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <p class="skill-tag">Responsive Layouts</p>
+        </div>
+
+        <!-- React -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap react-color">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <h3 class="skill-name">React</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="40">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">40%</span>
+          </div>
+          <p class="skill-tag">Beginner · Components · Hooks</p>
+        </div>
+
+        <!-- Canva -->
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap canva-color">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <h3 class="skill-name">Canva Design</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <p class="skill-tag">Graphics · Social Media</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       PROJECTS SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">My Work</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <p class="section-subtitle reveal">A selection of things I've built.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-1">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">A sleek personal portfolio featuring smooth animations, glassmorphism design, and full responsiveness across all devices.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-2">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+            </div>
+            <h3 class="project-title">Responsive Calculator</h3>
+            <p class="project-desc">A responsive calculator built with HTML, CSS, and JavaScript featuring basic arithmetic operations, real-time result display, keyboard support, and a clean user interface.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/CodeAlpha-mycalcultor/" class="btn btn-sm btn-primary" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/CodeAlpha-mycalcultor.git" class="btn btn-sm btn-ghost" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-3">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <h3 class="project-title">Responsive Image Gallery</h3>
+            <p class="project-desc">A responsive image gallery built with HTML, CSS, and JavaScript featuring lightbox preview, next/previous navigation, hover animations, smooth transitions, and category-based image filtering.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/CodeAlpha-image-gallery/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/CodeAlpha-image-gallery.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-4">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">JavaScript To-Do App</h3>
+            <p class="project-desc">In This ToDo app you can add or delete tasks. Additionally a message appears if the input is empty or you delete any task. Fully Responsible on all devices.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/Todo-App/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/Todo-App.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-5">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">05</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span> <span class="tag">API call</span>
+            </div>
+            <h3 class="project-title">Github Profile Viewer</h3>
+            <p class="project-desc">As user enter its Github username or url ,its info is fetched and displayed inside card. If usrername is not found it shows message respective message.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/github-profile-viewer/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/github-profile-viewer.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-6">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">06</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span> <span class="tag">JS Events</span>
+            </div>
+            <h3 class="project-title">Password Strength Analyzer</h3>
+            <p class="project-desc">This project checks realtime password strength and shows which character is included and strength prcentage.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/Password-Strength-Analyzer/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/Password-Strength-Analyzer.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Project 7 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-7">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">07</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span> <span class="tag">JS Events Handling</span>
+            </div>
+            <h3 class="project-title">Number Guess Game</h3>
+            <p class="project-desc">This game first user have to enter range for guessing a number. Inside this also entries are updated after 10 entries game over.</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/Number-Guess/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/Number-Guess.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 8 -->
+        <article class="project-card glass reveal">
+          <div class="project-thumb project-thumb-8">
+            <div class="project-overlay">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="project-number">08</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span> <span class="tag">JS Events Handling</span>
+            </div>
+            <h3 class="project-title">Table Generator</h3>
+            <p class="project-desc">This table generates customizable table with given start and end number, generate table only if start number with posative number</p>
+            <div class="project-links">
+              <a href="https://nouman-0886.github.io/Table-generator/" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="https://github.com/nouman-0886/Table-generator.git" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SERVICES SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-label reveal">What I Offer</div>
+      <h2 class="section-title reveal">Services</h2>
+      <p class="section-subtitle reveal">How I can help bring your vision to life.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card glass reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 class="service-title">Front-End Development</h3>
+          <p class="service-desc">Building clean, performant, and accessible websites using HTML, CSS, and JavaScript — with semantic structure and modern best practices.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Semantic HTML5</li>
+            <li><i class="fa-solid fa-check"></i> CSS Animations</li>
+            <li><i class="fa-solid fa-check"></i> Vanilla JS / DOM</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3 class="service-title">Responsive Web Design</h3>
+          <p class="service-desc">Every site I build looks and works perfectly on phones, tablets, and desktops — using Flexbox, CSS Grid, and mobile-first design.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Mobile-First</li>
+            <li><i class="fa-solid fa-check"></i> CSS Grid / Flex</li>
+            <li><i class="fa-solid fa-check"></i> Cross-Browser</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="service-title">Landing Page Development</h3>
+          <p class="service-desc">High-converting, visually impactful landing pages designed to engage visitors and drive action — fast to load and easy to maintain.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Conversion-Focused</li>
+            <li><i class="fa-solid fa-check"></i> Fast Load Times</li>
+            <li><i class="fa-solid fa-check"></i> Clean Structure</li>
+          </ul>
+        </div>
+
+        <div class="service-card glass reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-swatchbook"></i>
+          </div>
+          <h3 class="service-title">Canva Design &amp; Social Media Graphics</h3>
+          <p class="service-desc">Eye-catching social media posts, banners, thumbnails, and brand graphics crafted in Canva to make your brand stand out.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Social Posts</li>
+            <li><i class="fa-solid fa-check"></i> Thumbnails / Banners</li>
+            <li><i class="fa-solid fa-check"></i> Brand Identity</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's Build Something Together</h2>
+      <p class="section-subtitle reveal">Have a project in mind? I'd love to hear from you.</p>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>nouman@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Bahawalpur, Pakistan 🇵🇰</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Availability</h4>
+              <p>Open to Freelance & Opportunities</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/nouman-0886" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nouman-webdev/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap glass reveal">
+          <div id="formSuccess" class="form-success" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Message sent! I'll get back to you soon.</p>
+          </div>
+
+          <!-- Note: using div+button pattern per best practice; no <form> for artifact compat, using plain div -->
+          <div class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button class="btn btn-primary btn-full" id="sendBtn" onclick="submitForm()">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>Nouman<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building the web, one pixel at a time.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/nouman-0886" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nouman-webdev/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Nouman. All rights reserved.</p>
+        <p>Crafted with <span class="heart">♥</span> &amp; lots of coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SCROLL TO TOP BUTTON
+  ═══════════════════════════════════════════════ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
